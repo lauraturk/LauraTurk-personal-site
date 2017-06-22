@@ -1,4 +1,4 @@
-#Laura Turk's personal website and portfolio
+# Laura Turk's personal website and portfolio
 
 ### Status
 This website is a work in progress.
