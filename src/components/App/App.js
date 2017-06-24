@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Link } from 'react-router-dom'
-
+import { Route } from 'react-router-dom'
 
 import NavBar from '../NavBar/NavBar'
 import About from '../About/About'
@@ -8,33 +7,35 @@ import Projects from '../Projects/Projects'
 import Resume from '../Resume/Resume'
 import Contact from '../Contact/Contact'
 import IconBar from '../IconBar/IconBar'
-
+import cactusObj from '../cactusObj'
 
 class App extends Component {
-  constructor ({history}) {
-    super ()
-    console.log(history);
-    this.state = {
-      visited: 0
+  setBackgroundStyle(locationObj) {
+    switch (locationObj.pathname) {
+      case '/':
+        return { backgroundImage: cactusObj.cactusOne }
+      case '/skills':
+        return { backgroundImage: cactusObj.cactusTwo }
+      case '/projects':
+        return { backgroundImage: cactusObj.cactusThree }
+      case '/resume':
+        return { backgroundImage: cactusObj.cactusFour }
+      case '/contact':
+        return { backgroundImage: cactusObj.cactusFive }
+      default:
+        return "no-display"
     }
   }
 
-
   render() {
-    const countCacti = () => {
-      console.log('are you here?')
-      this.setState({visited: this.state.visited + 1})
-    }
-
+    const { location } = this.props
     return (
-      <div className="app">
-        <header>
-          <IconBar />
-          <Link to="/"><h1>Laura Turk</h1></Link>
-          <h2>Front End Software Developer</h2>
-          <NavBar handleCacti={countCacti}/>
+      <div className="u-wrapper background-img" style={this.setBackgroundStyle(location)}>
+        <header className="u-setHeader">
+          <Route path='/' render={({ location }) => <NavBar handleLocation={location} />} />
+          <Route path='/' render={({ location }) => <IconBar handleLocation={location} />} />
         </header>
-        <main className="app">
+        <main className="u-main-wrapper">
           <Route path="/skills" component={ About } />
           <Route path="/projects" component={ Projects } />
           <Route path="/resume" component={ Resume } />

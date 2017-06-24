@@ -2,37 +2,58 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className="skills-block">
-        <ul class="skills-list">
+    <section className="About">
+        <ul className="About-skills">
           <h3>Skills</h3>
-          <h4>Front End Fundamentals</h4>
-          <li>CSS3/HTML5</li>
-          <li>JavaScript (ES 2015)</li>
-          <li>Asynchronous JavaScript</li>
-          <li>Functional Programming</li>
-          <li>Object Oriented Programming</li>
-          <li>Test Driven Development</li>
-          <h4>Frameworks and Libraries</h4>
-          <li>jQuery</li>
-          <li>React.js</li>
-          <li>Redux.js</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <h4>Testing</h4>
-          <li>Enzyme (Mocha and Chai)</li>
-          <li>Jest</li>
-          <li>FetchMock</li>
-          <li>Selenium</li>
-          <h4>UX/UI and Design</h4>
-          <li>Sketch</li>
-          <li>Research and Usability Testing</li>
-          <li>WAI/ARIA</li>
-          <li>Iterative Design</li>
-          <h4>Soft Skills</h4>
-          <li>Crucial Conversations</li>
-          <li>Agile Practices</li>
+          <li>
+            <h4>Front End Fundamentals</h4>
+            <ul>
+              <li>CSS3/HTML5</li>
+              <li>JavaScript (ES 2015)</li>
+              <li>Asynchronous JavaScript</li>
+              <li>Functional Programming</li>
+              <li>Object Oriented Programming</li>
+              <li>Test Driven Development</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Frameworks and Libraries</h4>
+            <ul>
+              <li>jQuery</li>
+              <li>React.js</li>
+              <li>Redux.js</li>
+              <li>Node.js</li>
+              <li>Express</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Testing</h4>
+            <ul>
+              <li>Enzyme (Mocha and Chai)</li>
+              <li>Jest</li>
+              <li>FetchMock</li>
+              <li>Selenium</li>
+            </ul>
+          </li>
+          <li>
+            <h4>UX/UI and Design</h4>
+            <ul>
+              <li>Sketch</li>
+              <li>Research and Usability Testing</li>
+              <li>WAI/ARIA</li>
+              <li>Iterative Design</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Soft Skills</h4>
+            <ul>
+              <li>Crucial Conversations</li>
+              <li>Agile Practices</li>
+              <li>Leadership</li>
+            </ul>
+          </li>
         </ul>
-        <article className="about-section">
+        <article className="About-blurb">
           <h3>About Me</h3>
           <p>
             I am a detailed, dedicated, life-long learner passionate about

@@ -1,0 +1,32 @@
+.u-setHeader h1 {
+  font: 4em $font-title;
+  margin: 10px 0;
+  min-width: 376px;
+  max-width: 500px;
+}
+
+.u-setHeader h2 {
+  font: $font-body;
+  margin: 5px 0;
+}
+
+.background-img {
+  background-size: auto;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+
+
+@media (max-width: 600px) {
+  .u-setHeader h1 {
+    font: 3em $font-title;
+    margin: 10px 0;
+    min-width: 376px;
+    max-width: 500px;
+  }
+
+  .background-img {
+    background-size: contain;
+  }
+}

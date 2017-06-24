@@ -1,19 +1,20 @@
-@import './base/_color.scss',
+@import
+ //        './base/_color.scss',
         './base/_reset.scss',
         './base/_typography.scss',
-        './components/_buttons.scss/',
-        './components/_gallery.scss/',
-        './components/_navigation.scss/',
-        './helpers/_functions.scss',
-        './helpers/_mixins.scss',
-        './helpers/_variables.scss',
+//         './components/_buttons.scss/',
+//         './components/_gallery.scss/',
+//         './components/_navigation.scss/',
+//         './helpers/_functions.scss',
+//         './helpers/_mixins.scss',
+//         './helpers/_variables.scss',
         './layout/_grid.scss',
         './layout/_header.scss',
         './pages/_about.scss',
-        './pages/_contact.scss',
+        // './pages/_contact.scss',
         './pages/_home.scss',
-        './pages/_images.scss',
-        './pages/_navbar.scss',
-        './pages/_projects.scss',
-        './pages/_resume.scss'
-        './themes'
+        // './pages/_images.scss',
+        './pages/_navbar.scss'
+        // './pages/_projects.scss',
+        // './pages/_resume.scss'
+        // // './themes'
