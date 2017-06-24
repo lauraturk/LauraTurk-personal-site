@@ -1,0 +1,10 @@
+$font-body: 'Open Sans', sans-serif;
+$font-title: 'Permanent Marker', cursive;
+
+body {
+  font: 1em $font-body;
+}
+
+.selected {
+  font: 1.25em $font-title;
+}
