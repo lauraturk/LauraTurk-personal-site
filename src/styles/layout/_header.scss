@@ -7,7 +7,7 @@
   grid-column-end: 4;
   width: 100%;
   grid-template-columns: max(42px) .5fr 1fr .5fr;
-  grid-template-rows: 1fr .5fr;
+  grid-template-rows: 0fr .5fr;
   // position: relative;
   // z-index: 1;
 }
