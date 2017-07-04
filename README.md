@@ -5,6 +5,13 @@
 ### Status
 This website is a work in progress.
 
+### Technology
+React
+React-Router 4
+CSS Grid
+Sass
+React-pdf
+
 ### Set Up
 * ```clone down this repo```
 * ```npm install```
