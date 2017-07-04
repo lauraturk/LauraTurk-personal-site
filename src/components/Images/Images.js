@@ -5,13 +5,13 @@ const Images = (src) => {
 
   const imageStyle = {
     backgroundImage: `url("${src.src}")`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
+    backgroundSize: 'contain',
+    backgroundPosition: '0 0',
     backgroundRepeat: 'no-repeat'
   }
 
   return (
-    <div className="project-image" style={imageStyle}>{src.alt}</div>
+    <div className="Images" title={src.title} style={imageStyle}></div>
   )
 }
 
