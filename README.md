@@ -1,6 +1,6 @@
 # Laura Turk's personal website and portfolio
 
-[Live Site](lauraturk.com)
+[Live Site](http://www.lauraturk.com)
 
 ### Status
 This website is a work in progress.
