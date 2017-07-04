@@ -31,12 +31,11 @@ class App extends Component {
     const { location } = this.props
     return (
       <div className="u-wrapper background-img" style={this.setBackgroundStyle(location)}>
+        <h3>Work in Progress: happily accepting pull requests <a href="https://github.com/lauraturk/LauraTurk-personal-site">here!</a></h3>
         <header className="u-setHeader">
           <Route path='/' render={({ location }) => <NavBar handleLocation={location} />} />
           <Route path='/' render={({ location }) => <IconBar handleLocation={location} />} />
         </header>
-        {/* <h4>work in progress</h4>
-        <p>happily accepting pull requests <a href="https://github.com/lauraturk/LauraTurk-personal-site">here</a>!</p> */}
         <main className="u-main-wrapper">
           <Route path="/skills" component={ About } />
           <Route path="/projects" component={ Projects } />

@@ -1,15 +1,8 @@
 .Projects {
   a:nth-child(even) {
     margin-left: 20px;
-    // display: inline-block;
-  }
-
-  .Images {
-    // align-self: baseline;
   }
 }
-
-
 
 .Projects-block {
   display: grid;
@@ -24,9 +17,4 @@
     grid-template-rows: 240px 1fr;
     grid-row-gap: 10px;
   }
-}
-
-@media (max-width: 566px) {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
 }
