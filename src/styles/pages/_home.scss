@@ -1,13 +1,15 @@
-.u-setHeader h1 {
-  font: 4em $font-title;
-  margin: 10px 0;
-  min-width: 376px;
-  max-width: 500px;
-}
+.u-setHeader {
+  h1 {
+    font: 4em $font-title;
+    margin: 10px 0;
+    min-width: 376px;
+    max-width: 500px;
+  }
 
-.u-setHeader h2 {
-  font: $font-body;
-  margin: 5px 0;
+  h2 {
+    font: $font-body;
+    margin: 5px 0;
+  }
 }
 
 .background-img {
@@ -15,6 +17,12 @@
   background-position-x: right;
   background-repeat: no-repeat;
 }
+
+// .header-background-img {
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position-x: right;
+// }
 
 
 
