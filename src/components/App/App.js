@@ -8,6 +8,7 @@ import Resume from '../Resume/Resume'
 import Contact from '../Contact/Contact'
 import IconBar from '../IconBar/IconBar'
 import cactusObj from '../cactusObj'
+import Bio from '../Bio/Bio'
 
 class App extends Component {
   setBackgroundStyle(locationObj) {
@@ -37,6 +38,7 @@ class App extends Component {
           <Route path='/' render={({ location }) => <IconBar handleLocation={location} />} />
         </header>
         <main className="u-main-wrapper">
+          <Route path='/' exact component={ Bio } />
           <Route path="/skills" component={ About } />
           <Route path="/projects" component={ Projects } />
           <Route path="/resume" component={ Resume } />

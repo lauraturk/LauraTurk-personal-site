@@ -2,7 +2,7 @@ import React from 'react';
 
 const Bio = () => {
   return (
-    <article className="Bio">
+    <article className="Bio u-content">
       {/* <h3>About Me</h3> */}
       <p>
         I am a detailed, dedicated, life-long learner passionate about
