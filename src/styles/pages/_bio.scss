@@ -1,0 +1,15 @@
+.Bio {
+  min-width: 235px;
+  max-width: 450px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    text-align: justify;
+    // max-width: 235px;
+  }
+}
