@@ -5,13 +5,16 @@ const Images = (src) => {
 
   const imageStyle = {
     backgroundImage: `url("${src.src}")`,
-    backgroundSize: 'contain',
+    backgroundSize: '100%',
     backgroundPosition: '0 0',
     backgroundRepeat: 'no-repeat'
   }
 
   return (
-    <div className="Images" title={src.title} style={imageStyle}></div>
+    <div className={src.setClass}
+         title={src.title}
+         style={imageStyle}>
+    </div>
   )
 }
 

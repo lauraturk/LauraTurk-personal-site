@@ -1,12 +1,13 @@
 .About {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 20px;
 }
 
 .About-skills {
-  overflow: auto;
+  background-color: rgba(100%, 100%, 100%, .8);
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  display: grid;
   max-height: 90%;
   padding: 0 30px;
 
@@ -24,25 +25,16 @@
   }
 }
 
-.About-blurb {
-  // max-width: 235px;
-  min-width: 235px;
-  // padding: 0 30px;
 
-  h3 {
-    margin: 0;
-  }
-
-  p {
-    text-align: justify;
-    max-width: 235px;
-  }
-}
 
 @media (max-width: 600px) {
-  .About {
+  .About-skills {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: rgba(100%, 100%, 100%, .95);
+
+    li {
+      text-align: center;
+    }
   }
 }

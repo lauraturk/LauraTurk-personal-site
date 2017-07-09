@@ -1,20 +1,39 @@
 .Projects {
+  overflow-y: scroll;
+
   a:nth-child(even) {
     margin-left: 20px;
   }
 }
 
 .Projects-block {
+  border-bottom: 1px dotted black;
   display: grid;
-  grid-template-columns: 384px 1fr;
-  grid-template-rows: 240px;
-  grid-column-gap: 10px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  padding-bottom: 10px;
+
+  figcaption {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1040px) {
   .Projects-block {
-    grid-template-columns: 384px;
-    grid-template-rows: 240px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-row-gap: 10px;
+  }
+
+  .Projects {
+    background-color: rgba(100%, 100%, 100%, .8);
+  }
+}
+
+@media (max-width: 700px) {
+  .Projects-block {
+    grid-template-rows: 1fr .5fr;
   }
 }

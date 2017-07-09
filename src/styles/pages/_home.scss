@@ -18,13 +18,24 @@
   background-repeat: no-repeat;
 }
 
-// .header-background-img {
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   background-position-x: right;
-// }
+.About-blurb {
+  min-width: 235px;
 
+  h3 {
+    margin: 0;
+  }
 
+  p {
+    text-align: justify;
+    max-width: 235px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .background-img {
+    background-position-x: center;
+  }
+}
 
 @media (max-width: 600px) {
   .u-setHeader h1 {
@@ -32,9 +43,5 @@
     margin: 10px 0;
     min-width: 376px;
     max-width: 500px;
-  }
-
-  .background-img {
-    background-size: contain;
   }
 }

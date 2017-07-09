@@ -1,22 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 
 import * as icons from '../../contactIcons'
 
-const IconBar = (props) => {
-  const { handleLocation } = props
-
-  const showHome = () => {
-    return handleLocation.pathname !== '/' ?
-      <NavLink to="/" className="u-inline" activeClassName="selected">{icons.homeIcon}</NavLink> :
-      (<div className="u-Left">
-        <h1>Laura Turk</h1>
-        <h2>Front End Software Developer</h2>
-      </div>)
-  }
+const IconBar = () => {
 
   return (
-    <nav className="IconBar u-floatCenter u-floatTop">
+    <nav className="IconBar">
       <ul className="IconBar-ul">
         <a className="a-icon u-inline"
           href="https://github.com/lauraturk"
@@ -46,7 +35,6 @@ const IconBar = (props) => {
           </li>
         </a>
       </ul>
-      {showHome()}
     </nav>
   )
 }
