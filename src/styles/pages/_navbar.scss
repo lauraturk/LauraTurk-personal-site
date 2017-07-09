@@ -1,6 +1,10 @@
 .NavBar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 10px 0;
+  margin-top: 10px;
   max-width: 500px;
+}
+
+.NavBar-link {
+  margin-right: 15px;
 }

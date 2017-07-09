@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
   return (
     <section className="About u-content">
+      {/* <h3>Skills &#8595;</h3> */}
         <ul className="About-skills">
-          <h3>Skills &#8595;</h3>
           <li>
             <h4>Front End Fundamentals</h4>
             <ul>
@@ -49,7 +49,7 @@ const About = () => {
             <ul>
               <li>Crucial Conversations</li>
               <li>Agile Practices</li>
-              <li>Leadership</li>
+              <li>Team Leadership</li>
             </ul>
           </li>
         </ul>

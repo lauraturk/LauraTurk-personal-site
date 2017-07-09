@@ -7,8 +7,6 @@ const Projects = () => {
   return (
     <section className="Projects u-content">
       <figure className="Projects-block">
-        <Images src={"/assets/flash-lingua.gif"}
-         title="flash lingua demonstration"/>
         <figcaption>
           <a href="https://github.com/lauraturk/lt-flash-cards-express">{icons.githubIcon}</a>
           <a href="https://flash-lingua.herokuapp.com/search">{icons.websiteIcon}</a>
@@ -22,10 +20,10 @@ const Projects = () => {
             Testing: Enzyme, Jest, FetchMock
           </p>
         </figcaption>
+        <Images src={"/assets/flash-lingua.gif"}
+         title="flash lingua demonstration" setClass="Images" />
       </figure>
       <figure className="Projects-block">
-        <Images src={"/assets/movie-tracker.gif"}
-        title="movie tracker demonstration" />
         <figcaption>
           <a href="https://github.com/lauraturk/movie-tracker">{icons.githubIcon}</a>
           <a href="https://themovietracker.herokuapp.com/">{icons.websiteIcon}</a>
@@ -39,10 +37,10 @@ const Projects = () => {
             Testing: Enzyme, Jest, FetchMock
           </p>
         </figcaption>
+        <Images src={"/assets/movie-tracker.gif"}
+        title="movie tracker demonstration" setClass="Images" />
       </figure>
       <figure className="Projects-block">
-        <Images src={"/assets/jet-fuel.gif"}
-        title="jet fuel demonstration" />
         <figcaption>
           <a href="https://github.com/lauraturk/jet_fuel">{icons.githubIcon}</a>
           <a href="https://lt-cb-jet.herokuapp.com/">{icons.websiteIcon}</a>
@@ -55,6 +53,8 @@ const Projects = () => {
             Testing: Mocha
           </p>
         </figcaption>
+        <Images src={"/assets/jet-fuel.gif"}
+        title="jet fuel demonstration" setClass="Images"/>
       </figure>
     </section>
   )

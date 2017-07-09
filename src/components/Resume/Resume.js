@@ -1,13 +1,14 @@
 import React from 'react'
-import ReactPDF from 'react-pdf'
 
 const Resume = () => {
   return (
-    <section className="u-content">
-      <ReactPDF file="/assets/LauraTurk-FE_DEV-2017.compressed.pdf"
-      loading="Loading, Please Wait!"
-      error="Sorry! An error occured"
-      />
+    <section className="u-content Resume">
+      <a href="https://drive.google.com/file/d/0B9h0LU4R52lzWVh1M1ZDaExhcWc/view?usp=sharing"
+         target="_blank"
+         rel="noopener noreferrer">Print Version</a>
+      <img src="/assets/lauraturk-resume.png"
+              alt="resume"
+              className="Images-resume"/>
     </section>
   )
 }

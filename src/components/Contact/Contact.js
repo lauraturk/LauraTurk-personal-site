@@ -1,8 +1,10 @@
 import React from 'react'
+import IconBar from '../IconBar/IconBar'
 
 const Contact = () => {
   return (
     <section className="Contact">
+      <IconBar />
       <form action="https://formspree.io/laura.lk.turk@gmail.com"
       method="POST">
         <input type="text" name="name" placeholder="Your Name"/>

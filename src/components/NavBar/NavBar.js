@@ -6,7 +6,7 @@ const NavBar = (props) => {
 
   const setClass = () => {
     return handleLocation.pathname !== '/' ?
-      "u-floatCenter u-floatMiddle NavBar" : "u-floatLeft u-floatBottom NavBar"
+      "u-floatRight u-floatBottom NavBar" : "u-Left u-floatBelow u-inline NavBar"
   }
 
   return (
