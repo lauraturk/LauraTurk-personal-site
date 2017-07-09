@@ -33,7 +33,7 @@ class App extends Component {
   showHome (locationObj){
     return locationObj.pathname !== '/' ?
       <NavLink to="/" className="u-Left u-floatBottom" activeClassName="selected">{icons.homeIcon}</NavLink> :
-      (<div className="u-Left u-floatBottom">
+      (<div className="u-Left u-floatBottom Name">
         <h1>Laura Turk</h1>
         <h2>Front End Software Developer</h2>
       </div>)
